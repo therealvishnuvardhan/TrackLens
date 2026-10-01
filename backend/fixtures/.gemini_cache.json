@@ -1,0 +1,697 @@
+{
+  "v1_photographer_blog__to__v2_twitter": {
+    "visual_diff_summary": "Cropped ~15%, metadata stripped by platform, compressed.",
+    "edit_types": [
+      "crop",
+      "compressed",
+      "exif_stripped",
+      "jpeg_recompressed"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "Editorial variation describing the same flood event.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "v1_photographer_blog__to__v5_instagram": {
+    "visual_diff_summary": "Image B is cropped horizontally on the left and right sides, a warm/sepia color filter has been applied shifting the blue tones to brown/olive, and a translucent dark border/frame has been added around the edges.",
+    "edit_types": [
+      "crop",
+      "color_filter"
+    ],
+    "claim_drift": "REFRAMED",
+    "claim_drift_reasoning": "Both captions reference the flood event in Valencia, Spain, but Image B shifts the narrative from a factual photojournalistic description to an inspirational, solidarity-focused social media post.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "v2_twitter__to__v3_whatsapp": {
+    "visual_diff_summary": "Heavy downscaling and red breaking-news text overlay banner added.",
+    "edit_types": [
+      "crop",
+      "compressed",
+      "text_overlay_banner",
+      "heavy_compression"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "Location switched from Valencia (Spain) flash floods to Southern California.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "v3_whatsapp__to__v4_reddit": {
+    "visual_diff_summary": "Subject face digitally altered with synthetic glowing eyes and heightened contrast.",
+    "edit_types": [
+      "ai_edit",
+      "face_alteration",
+      "color_saturation"
+    ],
+    "claim_drift": "REFRAMED",
+    "claim_drift_reasoning": "Framing shifted from flood rescue reporting to supernatural/AI spectacle.",
+    "tampering_detected": true,
+    "tampering_details": "AI-altered face on central volunteer with glowing eyes and high-saturation distortion."
+  },
+  "v5_instagram__to__v6_news_outlet": {
+    "visual_diff_summary": "Editorial crop with standard photo credit notation.",
+    "edit_types": [
+      "crop",
+      "compressed",
+      "crop",
+      "editorial_credit"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "Editorial variation describing the same flood event.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "v2_twitter__to__v4_reddit": {
+    "visual_diff_summary": "Subject face digitally altered with synthetic glowing eyes and heightened contrast.",
+    "edit_types": [
+      "crop",
+      "compressed",
+      "ai_edit",
+      "face_alteration",
+      "color_saturation"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "Location switched from Valencia (Spain) flash floods to Southern California.",
+    "tampering_detected": true,
+    "tampering_details": "AI-altered face on central volunteer with glowing eyes and high-saturation distortion."
+  },
+  "v4_reddit__to__v_query_input": {
+    "visual_diff_summary": "Visual modifications and recompression.",
+    "edit_types": [],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "Editorial variation describing the same flood event.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single__user_20261001_061042_v4_reddit.png": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image is entirely a digital vector illustration/graphic rather than a photograph. It consists of basic geometric shapes (rectangles, ellipses, and lines) representing a flood scene, buildings, clouds, and stylized figures. Because it is an obvious cartoon/illustration and does not attempt to present itself as a real photograph, there is no photographic tampering, deepfake manipulation, or localized face editing present. The text banners are standard graphic overlays designed to mimic viral social media alerts.",
+    "visual_summary": "A simplified vector illustration depicting a flood scene at night. Two cartoonish figures in yellow vests sit in an orange circular raft. One figure has a purple circle over its head with glowing cyan eyes and lines. The background shows dark grey water, blocky buildings, and oval clouds. A red banner at the top reads 'BREAKING: SOUTHERN CALIFORNIA FLOODS' in bold white text, and yellow text at the bottom reads 'FORWARD TO ALL GROUPS NOW!!'.",
+    "extracted_claims": [
+      "Severe flooding is occurring in Southern California as breaking news.",
+      "A rescuer or entity with glowing eyes is present in the floodwaters.",
+      "The graphic is an urgent warning that needs to be forwarded to all groups immediately."
+    ]
+  },
+  "v3_whatsapp__to__v_user_uploaded_media": {
+    "visual_diff_summary": "A purple circle with glowing cyan dots and lines has been digitally overlaid onto the head of the rightmost figure in the raft.",
+    "edit_types": [
+      "face_alteration"
+    ],
+    "claim_drift": "REFRAMED",
+    "claim_drift_reasoning": "The narrative shifts from a general warning about Southern California floods and government failure to focusing on a fictional 'rescuer with glowing eyes' created by the digital modification.",
+    "tampering_detected": true,
+    "tampering_details": "A purple circle and cyan glowing eye elements were digitally added over the head of one of the figures in the raft."
+  },
+  "single__user_20261001_061223_custom_test_image.png": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image is a simple, digitally created graphic rather than a photograph. It consists of a solid dark blue background with a lighter blue rectangular field in the center containing the red text 'ALTERED BREAKING NEWS'. There are no signs of photographic tampering, localized editing, or AI-generation artifacts, as the image is a basic, clean digital layout.",
+    "visual_summary": "A minimalist digital graphic featuring a dark blue frame around a lighter blue rectangle. In the upper-left quadrant of the inner rectangle, the text 'ALTERED BREAKING NEWS' is displayed in a red, uppercase sans-serif font.",
+    "extracted_claims": [
+      "The graphic serves as a placeholder or label indicating altered or suspicious breaking news."
+    ]
+  },
+  "v6_news_outlet__to__v_user_uploaded_media": {
+    "visual_diff_summary": "The original illustration of people in a life raft is completely replaced by a solid dark blue background containing a lighter blue rectangular box and the red text 'ALTERED BREAKING NEWS'.",
+    "edit_types": [
+      "text_overlay"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "The original context discussing infrastructure challenges from a Mediterranean storm is contradicted by presenting the content as a suspicious or altered breaking news graphic, casting doubt on its authenticity.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single__user_20261001_061748_custom_test_image.png": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image consists of a simple, solid-colored background with a superimposed text element. The text 'ALTERED BREAKING NEWS' is rendered in a standard sans-serif font with high-contrast red coloring, which is characteristic of a digital overlay rather than a natural photographic element. There are no complex textures, lighting gradients, or photographic noise patterns that would suggest a real-world scene; the entire composition appears to be a digital graphic created for the purpose of labeling or satire.",
+    "visual_summary": "The image features a dark blue background with a large, light blue rectangular box in the center. Inside the box, on the left side, the text 'ALTERED BREAKING NEWS' is written in red capital letters.",
+    "extracted_claims": [
+      "The image is a meta-commentary on the authenticity of breaking news graphics.",
+      "The content is intentionally labeled as 'altered' to signal potential misinformation or satire."
+    ]
+  },
+  "single__user_20261001_061850_custom_test_image.png": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image is a simple, digitally created graphic with solid color blocks and text. There are no photographic elements, localized compression anomalies, or signs of digital manipulation on an underlying photo. The text 'ALTERED BREAKING NEWS' is rendered cleanly, indicating it is an original graphic template rather than a tampered photograph.",
+    "visual_summary": "A minimalist digital graphic consisting of a dark blue background with a lighter blue rectangular box in the center. Inside this box, the text 'ALTERED BREAKING NEWS' is written in red capital letters.",
+    "extracted_claims": [
+      "The graphic serves as a placeholder or label for altered breaking news content."
+    ]
+  },
+  "single__user_20261001_062331_custom_test_image.png": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image is a digitally created graphic rather than a photograph. It features a clean, solid-color design with a red text overlay reading 'ALTERED BREAKING NEWS'. There are no signs of photographic tampering, deepfakes, or AI-generated artifacts, as the image is entirely synthetic and serves as a placeholder or template graphic.",
+    "visual_summary": "A minimalist digital graphic consisting of a dark blue background with a lighter blue rectangular field in the center. The words 'ALTERED BREAKING NEWS' are displayed in red capital letters in the upper-left quadrant of the inner rectangle.",
+    "extracted_claims": [
+      "The graphic serves as a placeholder or template indicating altered or manipulated breaking news."
+    ]
+  },
+  "single__user_20261001_062749_1.jpg": {
+    "tampering_detected": false,
+    "confidence_score": 0.98,
+    "tampering_type": "none",
+    "forensic_details": "The image shows no signs of digital manipulation, AI generation, or tampering. Sponsor logos (such as VELO, Dropbox, Allwyn, and Richard Mille), aerodynamic surfaces, suspension elements, and tire details are sharp, consistent, and physically correct for a modern McLaren Formula 1 car. No anomalous compression artifacts or localized edits were detected.",
+    "visual_summary": "An orange and black McLaren Formula 1 car driving on a racetrack, likely during a testing session or race weekend. The car features prominent sponsor branding, distinctive multi-colored wheel covers, and a driver wearing a helmet visible in the cockpit.",
+    "extracted_claims": [
+      "A McLaren Formula 1 car on a racetrack."
+    ]
+  },
+  "calhoun_orig__to__lincoln_manip": {
+    "visual_diff_summary": "The head of John C. Calhoun has been replaced with the head of Abraham Lincoln. Additionally, the text on the documents on the table has been altered: 'THE SOVEREIGNTY of the STATES' is changed to 'Proclamation of Freedom', 'STRICT CONSTRUCTION' is changed to 'CONSTITUTION', and 'FREE TRADE' is changed to 'UNION'.",
+    "edit_types": [
+      "face_alteration",
+      "text_overlay",
+      "crop"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "The derivative image alters the identity of the subject from John C. Calhoun (a defender of states' rights and slavery) to Abraham Lincoln (the president who preserved the Union and issued the Emancipation Proclamation), using Calhoun's body as a base to create a heroic portrait of Lincoln.",
+    "tampering_detected": true,
+    "tampering_details": "This is a famous historical composite engraving (an early form of photo manipulation). Abraham Lincoln's head was superimposed onto the body of Southern politician John C. Calhoun, and the political texts on the table were altered to align with Unionist and abolitionist sentiments."
+  },
+  "single__pair1_lincoln_manipulated.jpg": {
+    "tampering_detected": true,
+    "confidence_score": 1.0,
+    "tampering_type": "ai_face_edit",
+    "forensic_details": "This image is a famous historical composite print created in the late 1860s. It is a classic example of pre-digital photo manipulation where the head of President Abraham Lincoln was spliced onto the body of the prominent Southern politician John C. Calhoun. The documents on the table were also altered to reference the 'Constitution', 'Union', and 'Proclamation of Freedom' to align with Lincoln's legacy.",
+    "visual_summary": "A full-length portrait engraving depicting Abraham Lincoln standing in a formal room. He is wearing a dark suit and cloak, with his left hand resting on a table that holds papers labeled 'Constitution', 'Union', and 'Proclamation of Freedom'. A globe and a draped American flag are visible in the background on the left.",
+    "extracted_claims": [
+      "Famous 19th-century portrait of Abraham Lincoln",
+      "Historical composite print",
+      "Splicing of Abraham Lincoln's head onto John C. Calhoun's body"
+    ]
+  },
+  "single__user_20261001_064012_lincoln_manipulated.jpg": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image is a high-quality digital reproduction of a historical lithograph or engraving, likely 'Abraham Lincoln, 16th President of the United States' by William Sartain (after a painting by W.E. Marshall). The visual characteristics, including the stippling, cross-hatching, and paper texture, are consistent with 19th-century printmaking techniques. There are no signs of modern digital manipulation, AI generation, or localized editing. The slight blur and grain are consistent with a digital scan of an aged physical print.",
+    "visual_summary": "A monochromatic, sepia-toned historical portrait of Abraham Lincoln standing in a formal setting. He is dressed in a dark frock coat, with one hand resting on a table covered by a cloth. On the table are books, an inkwell with a quill, and papers labeled 'Constitution', 'Union', and 'Proclamation of Freedom'. To his left is a globe and a draped American flag. The floor is patterned with a black-and-white checkerboard design.",
+    "extracted_claims": [
+      "Abraham Lincoln is associated with the Constitution, the Union, and the Proclamation of Freedom.",
+      "The image serves as a symbolic representation of Lincoln's presidency and his role in the American Civil War."
+    ]
+  },
+  "single__user_20261001_065810_pair1_calhoun_original.jpg": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image exhibits characteristics consistent with a 19th-century historical steel engraving or lithograph reproduction. Lines, cross-hatching, and textures are typical of period printmaking techniques, showing no digital pixel manipulation, modern upscaling artifacts, or localized AI generation signatures.",
+    "visual_summary": "A historical monochrome engraving depicting John C. Calhoun standing upright in formal attire within a room featuring a checkered floor, a globe on a stand, an American flag draped in the background, and a table with books and documents including one labeled 'Sovereignty of the States'.",
+    "extracted_claims": [
+      "Depiction of historical political figure John C. Calhoun",
+      "Iconography referencing states' rights, strict construction, and free trade"
+    ]
+  },
+  "single__user_20261001_070614_pair1_calhoun_original.jpg": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image exhibits characteristics consistent with a nineteenth-century historical engraving or lithograph reproduction, showing fine cross-hatching, stippling, and paper texture. There are no signs of digital manipulation, AI generation anomalies, compression artifacts indicative of deepfakes, or modern text overlays.",
+    "visual_summary": "A historical monochrome engraving featuring a full-length portrait of John C. Calhoun standing next to a table with books, a globe, and an American flag in the background, set against a checkered floor.",
+    "extracted_claims": [
+      "Historical engraving test",
+      "Portrait of a 19th-century political figure"
+    ]
+  },
+  "single__user_20261001_071317_pair1_calhoun_original.jpg": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image is a high-resolution digital reproduction of a 19th-century engraving (specifically a portrait of John C. Calhoun). The visual characteristics, such as cross-hatching, stippling, and line-work patterns, are consistent with historical intaglio or steel engraving techniques. There are no signs of modern digital manipulation, AI-generated artifacts, or localized editing. The texture of the paper and the ink distribution appear authentic to the medium of historical printmaking.",
+    "visual_summary": "This is a formal, full-length portrait engraving of John C. Calhoun, a 19th-century American statesman. He is depicted standing in a room with a checkered floor, wearing a long dark coat. Beside him is a table holding books and papers, one of which is clearly labeled 'The Sovereignty of the States'. A globe and a draped American flag are visible in the background. The style is monochromatic and highly detailed, characteristic of historical political portraiture.",
+    "extracted_claims": [
+      "The image depicts John C. Calhoun.",
+      "The subject is associated with the political concept of 'The Sovereignty of the States'.",
+      "The image is a historical engraving."
+    ]
+  },
+  "v_user_uploaded_media__to__v_lincoln_composite_1864": {
+    "visual_diff_summary": "The head of John C. Calhoun in Image A has been replaced with the head of Abraham Lincoln in Image B. Additionally, the text on the documents resting on the table has been altered: 'The Sovereignty of the States' was changed to 'Proclamation of Freedom', and 'Strict Construction'/'Free Trade' was changed to 'Constitution'/'Union'.",
+    "edit_types": [
+      "face_alteration",
+      "ai_edit",
+      "text_overlay"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "The original image depicts John C. Calhoun, a prominent 19th-century politician known for his defense of states' rights. The derivative image replaces his head with Abraham Lincoln's and alters the documents to reflect Lincoln's political legacy, effectively creating a historical fabrication.",
+    "tampering_detected": true,
+    "tampering_details": "The head of the figure has been digitally swapped or composited. The text on the papers on the table has been modified to align with the new identity of the subject, indicating a deliberate attempt to misrepresent the historical figure."
+  },
+  "single__user_20261001_071334_pair1_lincoln_manipulated.jpg": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image is a high-resolution digital reproduction of a historical 19th-century engraving or lithograph. The visual characteristics, such as the cross-hatching patterns, stippling, and paper texture, are consistent with period-appropriate printing techniques. There are no signs of modern digital manipulation, AI generation, or deepfake artifacts. The image appears to be a scan or photograph of an original print, showing expected signs of age and historical reproduction.",
+    "visual_summary": "A formal, full-length portrait of Abraham Lincoln standing in a room. He is dressed in a dark frock coat and trousers, with one hand resting on a table and the other tucked into his coat. On the table are books, an inkwell with a quill, and papers labeled 'Constitution', 'Union', and 'Proclamation of Freedom'. To his left is a globe and a draped American flag. The floor is covered in a checkered pattern.",
+    "extracted_claims": [
+      "Abraham Lincoln as a central figure of the American Civil War",
+      "The association of Lincoln with the Constitution, the Union, and the Emancipation Proclamation",
+      "Historical portraiture style reflecting 19th-century political iconography"
+    ]
+  },
+  "v_calhoun_original_1852__to__v_user_uploaded_media": {
+    "visual_diff_summary": "The face of John C. Calhoun in Image A has been replaced with the face of Abraham Lincoln in Image B. Additionally, the text on the documents on the table has been altered: 'The Sovereignty of the States' was changed to 'Proclamation of Freedom', and 'Strict Construction'/'Free Trade' was changed to 'Constitution'/'Union'.",
+    "edit_types": [
+      "face_alteration",
+      "ai_edit"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "The original image depicts John C. Calhoun, a 19th-century politician, while the derivative image falsely presents Abraham Lincoln in the same setting, effectively creating a historical fabrication.",
+    "tampering_detected": true,
+    "tampering_details": "The head of the subject has been digitally swapped or manipulated to replace Calhoun with Lincoln. The text on the papers has been digitally edited to align with Lincoln's historical narrative, likely using generative tools to match the original engraving style."
+  },
+  "single__user_20261001_071347_pair2_reddit_ai_tampered.png": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image is a simplistic, low-resolution vector-style graphic rather than a photograph. It contains clear text overlays ('BREAKING: SOUTHERN CALIFORNIA FLOODS' and 'FORWARD TO ALL GROUPS NOW!!') which are characteristic of viral misinformation or 'clickbait' memes. The figures are highly stylized, abstract shapes (circles for heads, rectangles for bodies) rather than realistic human forms. The presence of a purple circle with glowing cyan dots over the figures appears to be a deliberate, non-photorealistic graphical element, possibly added to mimic 'glitch' or 'AI-generated' aesthetic markers often found in low-effort propaganda or spam content.",
+    "visual_summary": "A minimalist, flat-design illustration depicting two abstract figures in a small orange boat surrounded by dark, stylized water and simple rectangular building silhouettes. A red banner at the top contains white text, and yellow text appears at the bottom. A purple circle with two glowing cyan dots is superimposed over the figures.",
+    "extracted_claims": [
+      "Southern California is currently experiencing floods",
+      "The image is a call to action to share the content with all groups",
+      "The content is framed as 'breaking' news"
+    ]
+  },
+  "single__user_20261001_072427_skysports-malaysia-malaysian_7305855.jpg": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image appears to be a genuine photograph taken during a Formula 1 race. The lighting, motion blur, and reflections on the track are consistent with a high-speed sports photography environment. There are no signs of digital manipulation, such as inconsistent shadows, unnatural edges, or artifacts typical of AI generation. The text on the trackside banners (e.g., 'PETRONAS PRIMAX') is sharp and consistent with real-world signage at the Sepang International Circuit. Minor compression artifacts are present, which is standard for web-distributed images, but they do not indicate tampering.",
+    "visual_summary": "A wide-angle, eye-level shot of several Formula 1 race cars driving on a wet track during a race. The cars are in the foreground, with a large, crowded grandstand filled with spectators in the background. The grandstand features a white roof structure and various national flags hanging from the railings. The track surface is dark and damp, reflecting the cars, and there is a visible mist or spray coming from the tires of the cars.",
+    "extracted_claims": [
+      "Formula 1 race event",
+      "Wet track conditions",
+      "Sepang International Circuit grandstand",
+      "High-speed racing action"
+    ]
+  },
+  "v_user_uploaded_media__to__v4_reddit": {
+    "visual_diff_summary": "A purple circular overlay with two glowing cyan dots has been added to the center of the image, positioned between the two figures in the boat.",
+    "edit_types": [
+      "ai_edit"
+    ],
+    "claim_drift": "REFRAMED",
+    "claim_drift_reasoning": "The original image was a generic, low-quality graphic used for viral misinformation. The derivative image adds a 'supernatural' or 'AI-generated' element to the graphic to shift the narrative from a simple disaster alert to a sensationalist claim about 'terrifying glowing eyes,' likely to bait engagement or suggest something paranormal.",
+    "tampering_detected": true,
+    "tampering_details": "A purple circle with two bright cyan points (glowing eyes) has been digitally inserted into the scene. This is a clear, non-natural addition that does not match the flat, vector-style art of the original image."
+  },
+  "v2_twitter__to__v_user_uploaded_media": {
+    "visual_diff_summary": "Image B adds a red banner with white text at the top and a yellow text overlay at the bottom to the original Image A.",
+    "edit_types": [
+      "text_overlay"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "Image A claims the scene is from the Valencia floods, while Image B claims it is from the Southern California floods. Since the base image is identical, the two captions provide mutually exclusive and contradictory geographical locations for the same event.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single__user_20261001_074349_my_photo.png": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image is a simplistic, low-resolution vector-style graphic rather than a photograph. It contains clear text overlays ('BREAKING: SOUTHERN CALIFORNIA FLOODS' and 'FORWARD TO ALL GROUPS NOW!!') which are characteristic of viral misinformation or 'clickbait' memes. The graphic itself appears to be a generic illustration created using basic shapes, likely generated or assembled to accompany the sensationalist text, rather than depicting a real-world event.",
+    "visual_summary": "A minimalist, cartoon-style graphic depicting two figures in a small orange boat surrounded by stylized water and dark, blocky shapes representing buildings. The image features a red banner at the top with white text and a yellow text overlay at the bottom, urging viewers to share the content.",
+    "extracted_claims": [
+      "There is a breaking news event involving floods in Southern California.",
+      "The viewer is urged to forward this information to all groups."
+    ]
+  },
+  "v4_reddit__to__v_user_uploaded_media": {
+    "visual_diff_summary": "The purple circular artifact with glowing cyan eyes located above the right figure in Image A has been removed in Image B.",
+    "edit_types": [
+      "ai_edit"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "Image A uses the visual artifact to support a sensationalist, fear-mongering claim about 'terrifying glowing eyes' (implying a supernatural or monstrous entity), whereas Image B removes this element, effectively debunking the specific visual claim made in the caption of Image A.",
+    "tampering_detected": true,
+    "tampering_details": "Image A contains a localized AI-generated or digitally inserted purple orb with glowing eyes, which appears to be a deliberate manipulation to create a 'creepy' or 'supernatural' effect. Image B is the cleaned version where this specific tampering has been removed."
+  },
+  "single__e94acc442fe5b91e5054b9e55f0e189b66e0d061__": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image is a high-resolution photograph of a mountain range, likely in the Swiss Alps, with a prominent red banner overlaid at the bottom. The text 'BREAKING: FAKE CLAIM HERE' is clearly added as a digital overlay, as the text is perfectly aligned and lacks the natural perspective or atmospheric haze present in the mountain landscape. There are no signs of AI generation or deepfake manipulation in the landscape itself, which appears to be a genuine photograph.",
+    "manipulation_steps": [
+      "Original landscape photograph captured",
+      "Red rectangular banner added to the bottom of the frame",
+      "White text overlay 'BREAKING: FAKE CLAIM HERE' added to the banner"
+    ],
+    "visual_summary": "A wide-angle, scenic shot of a lush green mountain range under a blue sky with scattered white clouds. A large, solid red banner spans the entire bottom width of the image, containing the white text 'BREAKING: FAKE CLAIM HERE'.",
+    "search_query": "Swiss Alps mountain landscape",
+    "extracted_claims": [
+      "The image is being used as a template for a 'breaking news' style meme or misinformation post."
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "web_02__to__upload_e94acc442f": {
+    "visual_diff_summary": "Image B is a cropped version of Image A, with a red banner containing white text overlay added to the bottom.",
+    "edit_types": [
+      "crop",
+      "text_overlay"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "The original image is a neutral landscape photograph. The addition of a 'BREAKING: FAKE CLAIM HERE' banner transforms the image into a vehicle for misinformation or a meta-commentary on misinformation, contradicting the original neutral context.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single__86d9cf0a55d4383d3b5a4318e54a46b383a55ea5__": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "compression",
+    "forensic_details": "The image is a real photograph of Times Square, New York, but it has undergone significant post-processing, likely HDR (High Dynamic Range) tone mapping. This is evidenced by the unnatural, high-contrast lighting, saturated colors, and 'halo' effects around the edges of buildings against the sky. While not 'tampered' in the sense of adding or removing objects, the image has been heavily manipulated through digital processing techniques to enhance dynamic range, which is common in architectural photography from that era. There are no signs of AI generation or object splicing.",
+    "manipulation_steps": [
+      "Captured original photograph",
+      "Applied heavy HDR tone mapping",
+      "Increased color saturation and contrast",
+      "Applied sharpening filters"
+    ],
+    "visual_summary": "A wide-angle, high-dynamic-range photograph of Times Square in New York City at dusk. The scene is densely packed with iconic illuminated billboards, including McDonald's, Mamma Mia, and Toy Story 2. A large American flag hangs in the foreground, and a crowd of people is gathered around the Father Duffy statue in the center. The lighting is dramatic, with deep shadows and bright, glowing signage.",
+    "search_query": "Times Square HDR photograph 2009",
+    "extracted_claims": [
+      "The image depicts Times Square in New York City.",
+      "The presence of 'Toy Story 2' and 'Billy Elliot' advertisements suggests the photo was taken around 2009.",
+      "The image is a heavily processed HDR photograph."
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "web_07__to__upload_e94acc442f": {
+    "visual_diff_summary": "A red banner with the text 'BREAKING: FAKE CLAIM HERE' has been added across the bottom of the image. Image B also exhibits much higher resolution and clarity compared to the highly compressed Image A.",
+    "edit_types": [
+      "text_overlay"
+    ],
+    "claim_drift": "REFRAMED",
+    "claim_drift_reasoning": "The original image is presented simply as a scenic mountain view. The derivative reframes this landscape by adding a breaking news style banner warning of a 'fake claim', shifting the context to a debunking or misinformation template.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "web_10__to__upload_86d9cf0a55": {
+    "visual_diff_summary": "No visual differences detected; the images are identical.",
+    "edit_types": [],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "The derivative image has no caption, but the visual content is identical to the source image of Times Square, preserving the context.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single__a8b010e055196c3cd6c67f9b49dd2b3e76221af6__": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "This is a digital reproduction of a historical engraving/lithograph. The visual patterns, fine crosshatching, and monochromatic tonal values match 19th-century printmaking techniques rather than modern digital manipulation or AI generation. The borders show a uniform framing color layer added around the historical print.",
+    "manipulation_steps": [
+      "Digitization of original 19th-century engraving",
+      "Addition of uniform colored border framing"
+    ],
+    "visual_summary": "A historical monochrome engraving depicting Abraham Lincoln standing full-length next to a table with the U.S. Constitution and the Proclamation of Freedom. A globe, flag, and checkered floor are visible in the background.",
+    "search_query": "Abraham Lincoln Proclamation of Freedom engraving",
+    "extracted_claims": [
+      "Abraham Lincoln is depicted alongside key historical documents including the Constitution and Proclamation of Freedom."
+    ],
+    "_model": "gemini-flash-lite-latest",
+    "source": "gemini"
+  },
+  "web_00__to__upload_a8b010e055": {
+    "visual_diff_summary": "Cropped slightly on the sides, warm sepia color filter applied, and thick orange borders added to the left and right margins.",
+    "edit_types": [
+      "crop",
+      "color_filter"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "Image B does not provide a caption, preserving the visual subject of the historical portrait without introducing any contradictory claims.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single_v2__a8b010e055196c3cd6c67f9b49dd2b3e76221af6__": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image is a high-quality digital reproduction of a historical lithograph or engraving of Abraham Lincoln. The visual characteristics, including the stippling and cross-hatching patterns typical of 19th-century printmaking, are consistent across the entire image. There are no signs of digital splicing, AI generation artifacts, or localized manipulation. The lighting and shadows are consistent with the original artwork's style. The image appears to be a standard archival scan or photograph of a historical print.",
+    "manipulation_steps": [],
+    "visual_summary": "A full-length portrait of Abraham Lincoln standing in a room with a checkered floor. He is dressed in a dark suit and is holding a piece of fabric. To his left is a globe, and to his right is a table with books, a quill, and papers labeled 'Constitution', 'Union', and 'Proclamation of Freedom'. An American flag is draped behind him.",
+    "search_query": "Abraham Lincoln portrait Proclamation of Freedom",
+    "extracted_claims": [
+      "Abraham Lincoln is depicted as a central figure of the Union and the Constitution.",
+      "The image highlights the Proclamation of Freedom as a key achievement of Lincoln's presidency."
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "single_v2__86d9cf0a55d4383d3b5a4318e54a46b383a55ea5__": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image shows typical characteristics of high-dynamic-range (HDR) photography, which is common for architectural and street photography in high-contrast environments like Times Square. The 'halo' effects around buildings and the intense saturation are artifacts of tone-mapping software used to merge multiple exposures, not evidence of digital tampering or splicing. No signs of cloning, object insertion, or AI-generated artifacts were detected; the perspective, lighting consistency, and crowd density are consistent with a real-world photograph taken in Times Square.",
+    "manipulation_steps": [
+      "Captured as multiple exposures",
+      "HDR tone-mapping applied to balance highlights and shadows",
+      "Color grading and saturation enhancement",
+      "Sharpening and noise reduction"
+    ],
+    "visual_summary": "A wide-angle, high-dynamic-range photograph of Times Square in New York City during dusk. The scene is filled with iconic illuminated billboards, including advertisements for McDonald's, Mamma Mia!, and Toy Story 2. A large American flag hangs in the center, and a dense crowd of pedestrians occupies the street and the Father Duffy Square area in the foreground.",
+    "search_query": "Times Square HDR photography 2009",
+    "extracted_claims": [
+      "The image depicts Times Square in New York City.",
+      "The presence of 'Toy Story 2' and 'Billy Elliot' advertisements suggests the photo was taken around 2009.",
+      "The image uses HDR processing to capture high-contrast lighting."
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "web_c03511af_00__to__upload_a8b010e055": {
+    "visual_diff_summary": "Image B is a cropped version of Image A, removing the top and bottom margins and parts of the left and right sides. It has been placed within a solid-colored border (frame) and appears to have a slight sepia or warm color adjustment applied.",
+    "edit_types": [
+      "crop",
+      "color_filter"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "The image content remains identical; the lack of a caption in Image B does not alter the factual context of the historical portrait.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single_v2__db12295600e0731ba5ae29c2dcb46931dfc062af__": {
+    "tampering_detected": true,
+    "confidence_score": 1.0,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image is a standard photograph of the Eiffel Tower with a large, red, opaque banner overlaid at the bottom. The text 'BREAKING: FA' is clearly superimposed on top of the original image, obscuring the lower portion of the park and the base of the tower. The text is sharp and lacks the natural atmospheric perspective of the background, confirming it is a digital overlay.",
+    "manipulation_steps": [
+      "Original photograph of the Eiffel Tower taken from the Champ de Mars",
+      "Addition of a solid red rectangular banner at the bottom of the frame",
+      "Superimposition of white text 'BREAKING: FA' onto the red banner"
+    ],
+    "visual_summary": "A clear, daytime shot of the Eiffel Tower in Paris, viewed from the Champ de Mars. The sky is a deep, cloudless blue. At the bottom of the image, a large red banner obscures the foreground, featuring the partial text 'BREAKING: FA' in white, bold, sans-serif font.",
+    "search_query": "Eiffel Tower Champ de Mars view",
+    "extracted_claims": [
+      "The image is presented as a breaking news graphic",
+      "The text 'BREAKING: FA' suggests a news headline, likely cut off"
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "upload_db12295600__to__web_14b1d4bf_05": {
+    "visual_diff_summary": "Image B is a different photograph of the Eiffel Tower taken from a nearly identical vantage point but at a different time. Key differences include: Image B has wispy clouds in the sky (Image A has a clear blue sky), lacks the green construction scaffolding/netting on the upper tower section seen in Image A, does not contain the red 'BREAKING' banner at the bottom, and has a different crop and lower resolution.",
+    "edit_types": [
+      "crop",
+      "compression"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "Both images depict the Eiffel Tower in Paris, preserving the geographic and thematic context of the landmark.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "web_bf8ae663_00__to__upload_db12295600": {
+    "visual_diff_summary": "A red banner with white text 'BREAKING: FA' has been overlaid at the bottom of the image, covering the bottommost part of the grass lawn.",
+    "edit_types": [
+      "text_overlay",
+      "crop"
+    ],
+    "claim_drift": "REFRAMED",
+    "claim_drift_reasoning": "The original scenic photograph of the Eiffel Tower is reframed as a breaking news broadcast or meme template.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single_v2__e94acc442fe5b91e5054b9e55f0e189b66e0d061__": {
+    "tampering_detected": true,
+    "confidence_score": 1.0,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image features a high-resolution landscape photograph of a mountain range, likely in the Swiss Alps. A distinct, solid red rectangular banner has been digitally overlaid at the bottom of the frame. This banner contains the white, sans-serif text 'BREAKING: FAKE CLAIM HERE'. The text and the red background are clearly superimposed over the original image, as they lack the natural texture, lighting, and atmospheric haze present in the mountain landscape.",
+    "manipulation_steps": [
+      "Original landscape photograph captured",
+      "Red rectangular banner added to the bottom of the image",
+      "White text 'BREAKING: FAKE CLAIM HERE' overlaid onto the red banner"
+    ],
+    "visual_summary": "A panoramic view of a lush, green mountain range under a blue sky with scattered white clouds. A prominent red banner with white text reading 'BREAKING: FAKE CLAIM HERE' is superimposed across the bottom portion of the image.",
+    "search_query": "Swiss Alps mountain landscape",
+    "extracted_claims": [
+      "The image is being used as a template for a 'breaking news' style misinformation or satire post."
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "web_f2234de9_00__to__upload_e94acc442f": {
+    "visual_diff_summary": "Image B is a cropped version of Image A, with a red banner containing white text 'BREAKING: FAKE CLAIM HERE' added to the bottom.",
+    "edit_types": [
+      "crop",
+      "text_overlay"
+    ],
+    "claim_drift": "CONTRADICTED",
+    "claim_drift_reasoning": "The original image is a factual depiction of the Fronalpstock mountain. The addition of the text 'BREAKING: FAKE CLAIM HERE' explicitly labels the content as a false claim, contradicting the original context of the image as a legitimate geographical photograph.",
+    "tampering_detected": true,
+    "tampering_details": "The addition of a text-based banner overlay is a form of digital manipulation intended to alter the context and credibility of the original image."
+  },
+  "single_v2__1f3203678b072a843da14af6feb36495ffd5c2d6__": {
+    "tampering_detected": false,
+    "confidence_score": 0.98,
+    "tampering_type": "none",
+    "forensic_details": "The image shows consistent optical physics, natural depth of field, realistic track spray, motion blur, and authentic crowd patterns. There are no signs of AI synthesis, cloning, compositing, or post-capture splicing. The architectural structures, sponsor signage (Petronas Primax), and aerodynamic details of the 2017 Formula 1 cars are historically and physically accurate.",
+    "manipulation_steps": [
+      "Original capture by photojournalist/broadcaster",
+      "Standard color grading and minor contrast adjustment",
+      "JPEG compression for web distribution"
+    ],
+    "visual_summary": "Formula 1 cars, led by a Mercedes alongside Red Bull Racing and Force India vehicles, racing down the main straight beneath the packed grandstand at the Sepang International Circuit during the Malaysian Grand Prix.",
+    "search_query": "2017 Malaysian Grand Prix race start Sepang",
+    "extracted_claims": [
+      "2017 Formula 1 Malaysian Grand Prix at Sepang International Circuit",
+      "Mercedes and Red Bull cars leading the pack into turn one"
+    ],
+    "_model": "gemini-flash-latest",
+    "source": "gemini"
+  },
+  "single_v2__8a7ec572b55b5dbbc7aa42ac6ca07fe4831038ba__": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image appears to be an authentic photograph of Formula 1 driver Max Verstappen celebrating a victory on the podium. There are no visual anomalies, inconsistencies in lighting, or signs of digital manipulation such as splicing, cloning, or AI generation.",
+    "manipulation_steps": [],
+    "visual_summary": "Max Verstappen wearing his Red Bull Racing suit and cap, smiling and raising his right fist in celebration on a podium with a blue and black striped background.",
+    "search_query": "Max Verstappen celebrating podium Red Bull",
+    "extracted_claims": [
+      "Max Verstappen celebrating a Formula 1 race victory"
+    ],
+    "_model": "gemini-3.5-flash",
+    "source": "gemini"
+  },
+  "web_d643fac5_02__to__upload_8a7ec572b5": {
+    "visual_diff_summary": "Image B is a tighter crop of Image A, focusing more on the subject's upper body and head. Image B exhibits higher saturation and contrast, and shows signs of digital upscaling or sharpening artifacts compared to the source.",
+    "edit_types": [
+      "crop",
+      "compression"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "Both images depict the same subject (Max Verstappen) in the same context (podium celebration). The lack of a caption in Image B does not contradict the original context.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single_v2__d4a13bed08b80951c19d06165c46c5b86c40e040__": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image is a digitally created promotional poster/graphic. It features multiple text overlays ('SPRINT RACE RETURNS TO SILVERSTONE', '02-05 JULY 2026', and event logos) superimposed over a composite image consisting of Formula 1 cars, a racetrack, spectators, flags, and stunt planes.",
+    "manipulation_steps": [
+      "Compositing background elements of the Silverstone circuit and grandstands.",
+      "Splicing images of F1 cars from different teams (McLaren, Red Bull, Aston Martin) onto the track.",
+      "Adding sky elements, including British flags and Red Arrows stunt planes with smoke trails.",
+      "Applying digital color grading and stylized lighting effects.",
+      "Overlaying official logos and promotional text for the 2026 British Grand Prix."
+    ],
+    "visual_summary": "A promotional graphic for the 2026 Formula 1 British Grand Prix at Silverstone. It depicts several F1 cars racing on track with a large crowd in the background, British flags flying, and stunt planes performing an aerial display overhead. Large text at the bottom announces that the Sprint Race is returning to Silverstone from July 2-5, 2026.",
+    "search_query": "British Grand Prix 2026 sprint race Silverstone poster",
+    "extracted_claims": [
+      "The F1 Sprint Race will return to Silverstone for the British Grand Prix in 2026.",
+      "The 2026 British Grand Prix event is scheduled to take place from July 2nd to July 5th, 2026."
+    ],
+    "_model": "gemini-3.5-flash",
+    "source": "gemini"
+  },
+  "web_8de22b03_00__to__upload_d4a13bed08": {
+    "visual_diff_summary": "Slight resolution downscaling and compression from Image A to Image B, with no other visual alterations.",
+    "edit_types": [
+      "compression"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "Image B does not provide a caption, thereby maintaining the original visual context of the Formula 1 British Grand Prix without introducing any new or contradictory claims.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single_v2__971b5a6fc1429c212865192376d2f6225cd1ec5a__": {
+    "tampering_detected": true,
+    "confidence_score": 0.95,
+    "tampering_type": "text_overlay",
+    "forensic_details": "The image is a standard photograph of actor Robert Downey Jr. that has been repurposed as a meme. The primary manipulation is the addition of the text 'LOOK AT MY FACE' at the top of the frame. There is also a small 'imgflip.com' watermark in the bottom left corner, indicating it was processed through an online meme generator. The underlying image of the subject appears to be a genuine photograph, likely from a press event, showing no signs of deepfake or AI-generated facial features.",
+    "manipulation_steps": [
+      "Cropped or selected original photograph of Robert Downey Jr.",
+      "Added text 'LOOK AT MY FACE' to the top of the image",
+      "Added 'imgflip.com' watermark to the bottom left corner"
+    ],
+    "visual_summary": "A close-up portrait of actor Robert Downey Jr. wearing dark-rimmed glasses and a suit jacket, with the text 'LOOK AT MY FACE' overlaid in white capital letters at the top.",
+    "search_query": "Robert Downey Jr wearing glasses",
+    "extracted_claims": [
+      "The image is being used as a meme template",
+      "The text 'LOOK AT MY FACE' is a directive to the viewer"
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "web_7aa17786_03__to__upload_971b5a6fc1": {
+    "visual_diff_summary": "Image B is a cropped version of Image A, focusing more tightly on the subject's face. A text overlay reading 'LOOK AT MY FACE' has been added to the top center, and a small 'imgflip.com' watermark has been added to the bottom left corner.",
+    "edit_types": [
+      "crop",
+      "text_overlay"
+    ],
+    "claim_drift": "REFRAMED",
+    "claim_drift_reasoning": "The original image is a neutral photographic portrait from a specific event (SDCC 2014). Image B transforms this into a meme format, changing the context from a documentary record to a humorous or confrontational social media post.",
+    "tampering_detected": false,
+    "tampering_details": null
+  },
+  "single_v2__bedb658d2f2c020bd739d045f7f7985ec7fb7451__": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image shows no signs of digital manipulation such as splicing, cloning, or AI generation. The lighting on the subject's face is consistent with the ambient light in the environment. The Burger King crown appears to be a physical paper crown worn by the subject, with natural perspective and shadows consistent with the object's placement. The edges of the crown and the subject's hair show no signs of unnatural masking or compositing artifacts. The image exhibits standard digital camera noise and compression artifacts consistent with a smartphone photograph.",
+    "manipulation_steps": [],
+    "visual_summary": "A close-up, slightly angled portrait of a young man with dark, wavy hair wearing a yellow paper Burger King crown. He is looking directly at the camera with a neutral expression, and his left hand is raised near the side of the crown. He is wearing a dark shirt with a red lanyard visible around his neck.",
+    "search_query": "person wearing Burger King paper crown",
+    "extracted_claims": [
+      "The person in the image is wearing a Burger King paper crown."
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "single_v2__c890074ed5255a6e475aea91df16425bace14d1c__": {
+    "tampering_detected": false,
+    "confidence_score": 0.95,
+    "tampering_type": "none",
+    "forensic_details": "The image shows a McLaren Formula 1 car on a track. The lighting, shadows, and reflections on the car's bodywork are consistent with a high-speed professional photograph taken during a race or testing session. There are no signs of splicing, cloning, or AI-generated artifacts. The motion blur on the track surface and the sharpness of the car are consistent with a panning shot taken by a professional photographer. The presence of standard sponsor logos and the specific livery design matches known McLaren F1 car designs from recent seasons.",
+    "manipulation_steps": [],
+    "visual_summary": "A professional, high-angle action shot of a McLaren Formula 1 race car driving on an asphalt track. The car is primarily orange and black with various sponsor logos, including 'Google' and 'VELO'. The car is in motion, with the background showing a blurred track environment.",
+    "search_query": "McLaren F1 car on track",
+    "extracted_claims": [
+      "The image depicts a McLaren Formula 1 car.",
+      "The car is in a racing or testing environment."
+    ],
+    "_model": "gemini-3.1-flash-lite",
+    "source": "gemini"
+  },
+  "web_84b3d1e5_03__to__upload_c890074ed5": {
+    "visual_diff_summary": "Image B is a slightly cropped version of Image A, primarily removing a small portion of the top and right edges. The image quality is slightly lower, suggesting re-compression.",
+    "edit_types": [
+      "crop",
+      "compression"
+    ],
+    "claim_drift": "SAME",
+    "claim_drift_reasoning": "The visual content remains identical in subject matter (a McLaren F1 car). While Image B lacks a caption, the core visual information is preserved from the source.",
+    "tampering_detected": false,
+    "tampering_details": null
+  }
+}

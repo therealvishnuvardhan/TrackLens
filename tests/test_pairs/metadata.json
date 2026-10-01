@@ -1,0 +1,64 @@
+{
+  "test_pairs": [
+    {
+      "id": "pair1_historical_head_graft",
+      "title": "Lincoln / Calhoun Historical Head Graft & Treaty Forgery",
+      "original": {
+        "file": "pair1_calhoun_original.jpg",
+        "label": "Original Portrait of John C. Calhoun (1852)",
+        "source": "A.H. Ritchie engraving of John C. Calhoun",
+        "date": "1852-01-01",
+        "tampered": false
+      },
+      "manipulated": {
+        "file": "pair1_lincoln_manipulated.jpg",
+        "label": "Manipulated Abraham Lincoln Composite Portrait (c. 1860)",
+        "source": "Famous Civil War era composite",
+        "date": "1860-01-01",
+        "tampered": true,
+        "tampering_type": "head_replacement_and_text_forgery",
+        "tampering_summary": "Lincoln's head grafted onto Calhoun's body; documents on desk altered from 'Sovereignty of the States' to 'Proclamation of Freedom' and 'Union'."
+      }
+    },
+    {
+      "id": "pair2_ai_face_tampering",
+      "title": "Flood Rescue Volunteer AI Face & Glowing Eyes Modification",
+      "original": {
+        "file": "pair2_valencia_original.png",
+        "label": "Verified Canon EOS R5 Original Photograph",
+        "source": "Elena Rossi Photography, Valencia flood rescue",
+        "date": "2024-03-02T10:00:00Z",
+        "tampered": false
+      },
+      "manipulated": {
+        "file": "pair2_reddit_ai_tampered.png",
+        "label": "AI-Manipulated Reddit Post",
+        "source": "Viral Reddit post with altered face",
+        "date": "2024-03-09T18:45:00Z",
+        "tampered": true,
+        "tampering_type": "ai_face_edit",
+        "tampering_summary": "AI-altered face on central volunteer with glowing eyes and high-saturation distortion."
+      }
+    },
+    {
+      "id": "pair3_breaking_news_hoax",
+      "title": "Viral WhatsApp Forward Claim Swap & Banner Overlay",
+      "original": {
+        "file": "pair3_clean_social_crop.png",
+        "label": "X/Twitter Genuine Social Share",
+        "source": "@stormchaser_eu",
+        "date": "2024-03-03T14:20:00Z",
+        "tampered": false
+      },
+      "manipulated": {
+        "file": "pair3_whatsapp_banner_hoax.png",
+        "label": "WhatsApp Viral Forward with Misinformation Banner",
+        "source": "Viral forwarded meme",
+        "date": "2024-03-05T08:15:00Z",
+        "tampered": true,
+        "tampering_type": "text_overlay_and_claim_swap",
+        "tampering_summary": "Added sensational 'BREAKING' banner overlay, downsampled resolution, and swapped location claim from Valencia to California."
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+pillow>=10.2.0
+imagehash>=4.3.1
+networkx>=3.2.1
+numpy>=1.26.0
+opencv-python-headless>=4.9.0
+google-genai>=0.1.1
+python-dotenv>=1.0.1
+pytest>=8.0.0
+requests>=2.31.0
+python-multipart>=0.0.9
+
+# Learned forgery detection (TruFor). Install PyTorch for your platform first, e.g. CUDA 12.4:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# then fetch the weights: python scripts/download_models.py
+timm>=0.9
+yacs>=0.1.8

@@ -1,0 +1,140 @@
+{
+  "scenario_id": "scenario_title_slide",
+  "title": "Valencia Flood Rescue to Disinformation Progression",
+  "description": "Ground truth lineage replicating the title slide case: original photographer blog post spreading across Twitter, WhatsApp (disinfo claim swap), Reddit (AI face distortion), Instagram (filtered square crop), and News outlet.",
+  "versions": [
+    {
+      "id": "v1_photographer_blog",
+      "platform": "Photographer Blog",
+      "author": "Elena Rossi",
+      "url": "https://elena-rossi-photography.com/galleries/valencia-storm-2024/original.jpg",
+      "timestamp": "2024-03-02T10:00:00Z",
+      "caption": "Rescue volunteers wading through flash flood waters in Valencia, Spain. Shot on Canon EOS R5.",
+      "image_path": "images/v1_photographer_blog.png",
+      "dimensions": [1200, 800],
+      "c2pa": {
+        "is_signed": true,
+        "issuer": "Canon Camera Assertion Engine",
+        "action": "c2pa.created"
+      },
+      "exif": {
+        "Make": "Canon",
+        "Model": "Canon EOS R5",
+        "LensModel": "RF 50mm F1.2 L USM",
+        "DateTimeOriginal": "2024-03-02 09:34:12"
+      },
+      "source_trust_score": 0.95
+    },
+    {
+      "id": "v2_twitter",
+      "platform": "X/Twitter",
+      "author": "@stormchaser_eu",
+      "url": "https://x.com/stormchaser_eu/status/1764293847291",
+      "timestamp": "2024-03-03T14:20:00Z",
+      "caption": "Heartbreaking scenes from the floods in Valencia today. Stay safe everyone! #ValenciaFloods",
+      "image_path": "images/v2_twitter.png",
+      "dimensions": [1000, 667],
+      "c2pa": null,
+      "exif": {},
+      "source_trust_score": 0.65
+    },
+    {
+      "id": "v3_whatsapp",
+      "platform": "WhatsApp",
+      "author": "Forwarded many times",
+      "url": "whatsapp://forward/msg_9381729",
+      "timestamp": "2024-03-05T08:15:00Z",
+      "caption": "BREAKING: Disastrous flooding hits Southern California this morning!! Government failure! Forward to 5 groups",
+      "image_path": "images/v3_whatsapp.png",
+      "dimensions": [800, 533],
+      "c2pa": null,
+      "exif": {},
+      "source_trust_score": 0.30
+    },
+    {
+      "id": "v4_reddit",
+      "platform": "Reddit",
+      "author": "u/conspiracy_surfer",
+      "url": "https://reddit.com/r/pics/comments/1ba489x/unreal_flood_rescue_california/",
+      "timestamp": "2024-03-09T18:45:00Z",
+      "caption": "AI or real? Rescuer with terrifying glowing eyes in California floodwaters",
+      "image_path": "images/v4_reddit.png",
+      "dimensions": [800, 533],
+      "c2pa": null,
+      "exif": {},
+      "source_trust_score": 0.40
+    },
+    {
+      "id": "v5_instagram",
+      "platform": "Instagram",
+      "author": "@valencia_moments",
+      "url": "https://instagram.com/p/C4Fgh1_x99a",
+      "timestamp": "2024-03-03T16:00:00Z",
+      "caption": "Valencia standing strong amid the storm 🌧️ #valencia #floods #rescue",
+      "image_path": "images/v5_instagram.png",
+      "dimensions": [800, 800],
+      "c2pa": null,
+      "exif": {},
+      "source_trust_score": 0.60
+    },
+    {
+      "id": "v6_news_outlet",
+      "platform": "News Outlet (El Diario)",
+      "author": "Redacción Comunidad",
+      "url": "https://eldiariovalencia.es/noticias/2024/03/06/el-impacto-de-las-lluvias.html",
+      "timestamp": "2024-03-06T11:30:00Z",
+      "caption": "Analysis: The infrastructure challenges exposed by the recent Mediterranean storm.",
+      "image_path": "images/v6_news_outlet.png",
+      "dimensions": [750, 500],
+      "c2pa": null,
+      "exif": {},
+      "source_trust_score": 0.90
+    }
+  ],
+  "expected_tree": {
+    "root": "v1_photographer_blog",
+    "edges": [
+      {
+        "source": "v1_photographer_blog",
+        "target": "v2_twitter",
+        "expected_score_range": [0.90, 0.99],
+        "expected_edits": ["cropped", "compressed", "exif_stripped"],
+        "expected_claim_drift": "SAME",
+        "tampering_detected": false
+      },
+      {
+        "source": "v2_twitter",
+        "target": "v3_whatsapp",
+        "expected_score_range": [0.82, 0.94],
+        "expected_edits": ["compressed", "text_overlay_banner"],
+        "expected_claim_drift": "CONTRADICTED",
+        "tampering_detected": false
+      },
+      {
+        "source": "v3_whatsapp",
+        "target": "v4_reddit",
+        "expected_score_range": [0.80, 0.92],
+        "expected_edits": ["ai_manipulation", "color_saturation"],
+        "expected_claim_drift": "REFRAMED",
+        "tampering_detected": true,
+        "tampering_type": "AI-altered face / eyes"
+      },
+      {
+        "source": "v1_photographer_blog",
+        "target": "v5_instagram",
+        "expected_score_range": [0.88, 0.97],
+        "expected_edits": ["square_crop", "color_filter"],
+        "expected_claim_drift": "SAME",
+        "tampering_detected": false
+      },
+      {
+        "source": "v5_instagram",
+        "target": "v6_news_outlet",
+        "expected_score_range": [0.85, 0.95],
+        "expected_edits": ["cropped", "published"],
+        "expected_claim_drift": "SAME",
+        "tampering_detected": false
+      }
+    ]
+  }
+}
